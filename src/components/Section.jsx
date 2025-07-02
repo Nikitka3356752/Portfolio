@@ -37,7 +37,7 @@ const Section = ({ id, name, blocks, bgColor, images = [] }) => (
     <div className="mx-auto px-0 w-full flex-1 flex items-end">
       <div className="section-grid">
         {blocks.map((block, index) => (
-          <InfoBlock key={index} {...block} className="inline-block" />
+          <InfoBlock key={index} {...block} className="inline-block relative" />
         ))}
       </div>
     </div>
